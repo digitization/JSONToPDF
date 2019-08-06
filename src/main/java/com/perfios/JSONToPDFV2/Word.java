@@ -8,7 +8,7 @@ public class Word implements Comparable<Word>{
 	private float y;
 	private float w;
 	private float h;
-
+	
 	public Word(String value, float x, float y, float w, float h) {
 		super();
 		this.value = value;
@@ -54,7 +54,6 @@ public class Word implements Comparable<Word>{
 
 	public int compareTo(Word o) {
 		return (int) (this.getY() - o.getY());
-
 	}
 
 	public static Comparator<Word> WordNameComparator 
@@ -64,7 +63,6 @@ public class Word implements Comparable<Word>{
 			return word1.compareTo(word2);
 
 		}
-
 	};
 
 	@Override
